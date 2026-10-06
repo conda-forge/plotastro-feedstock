@@ -1,7 +1,7 @@
 About plotastro-feedstock
 =========================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plotastro-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/BehnoodBandi/plotastro
 
@@ -26,8 +26,8 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <a href="https://github.com/conda-forge/plotastro-feedstock/actions/workflows/conda-build.yml">
-        <img src="https://github.com/conda-forge/plotastro-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      <a href="https://github.com/conda-forge/fs-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/fs-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -43,10 +43,10 @@ Current release info
 Installing plotastro
 ====================
 
-Installing `plotastro` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `plotastro` from the `conda-forge/label/plotastro_rc` channel can be achieved by adding `conda-forge/label/plotastro_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/plotastro_rc
 conda config --set channel_priority strict
 ```
 
@@ -92,7 +92,7 @@ It is possible to list all of the versions of `plotastro` available on your plat
 <summary>With conda</summary>
 
 ```
-conda search plotastro --channel conda-forge
+conda search plotastro --channel conda-forge/label/plotastro_rc
 ```
 
 </details>
@@ -101,7 +101,7 @@ conda search plotastro --channel conda-forge
 <summary>With mamba</summary>
 
 ```
-mamba search plotastro --channel conda-forge
+mamba search plotastro --channel conda-forge/label/plotastro_rc
 ```
 
 </details>
@@ -110,7 +110,7 @@ mamba search plotastro --channel conda-forge
 <summary>With pixi</summary>
 
 ```
-pixi search plotastro --channel conda-forge
+pixi search plotastro --channel conda-forge/label/plotastro_rc
 ```
 
 </details>
@@ -120,13 +120,13 @@ pixi search plotastro --channel conda-forge
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search plotastro --channel conda-forge
+mamba repoquery search plotastro --channel conda-forge/label/plotastro_rc
 
 # List packages depending on `plotastro`:
-mamba repoquery whoneeds plotastro --channel conda-forge
+mamba repoquery whoneeds plotastro --channel conda-forge/label/plotastro_rc
 
 # List dependencies of `plotastro`:
-mamba repoquery depends plotastro --channel conda-forge
+mamba repoquery depends plotastro --channel conda-forge/label/plotastro_rc
 ```
 
 </details>

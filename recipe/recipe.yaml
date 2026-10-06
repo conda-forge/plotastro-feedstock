@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: plotastro
-  version: "1.0.1"
+  version: "1.1.0b2"
 
 package:
-  name: ${{ name|lower }}
+  name: plotastro
   version: ${{ version }}
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 82b4b616eb6fc6bb9e4c6304867073fd87fa87011d6a6fd4c2283bf90c10aadd
+  sha256: 0a6b3b4428045fa98e887b199ab781ae2a12cc76325f21d01058a6734c180b4d
 
 build:
   noarch: python
@@ -46,6 +46,7 @@ tests:
       run:
         - python ${{ python_min }}.*
         - pytest
+        - cmasher
     script:
       - plotastro-authors --help
       - pytest tests -v
