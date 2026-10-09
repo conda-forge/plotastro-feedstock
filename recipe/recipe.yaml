@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: plotastro
-  version: "1.1.0"
+  version: "1.1.1"
 
 package:
   name: plotastro
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: ac65a803d76a83656b3740a12b29f6d031aa70d80ec478410bfba7ab10b3c20f
+  sha256: ece37faf4c9b502af729bfb3ce4c75713581561913a091c1d7c432ec355f6e2a
 
 build:
   noarch: python
@@ -54,12 +54,13 @@ tests:
 
 about:
   homepage: https://github.com/BehnoodBandi/plotastro
-  summary: Publication-quality matplotlib styles and helpers for astronomy journals
+  summary: Publication-quality matplotlib styles and helpers for astronomy, physics and chemistry journals
   description: |
     plotastro provides matplotlib style sheets and helpers for producing
-    publication-ready figures for astronomy journals (MNRAS, A&A, ApJ, OJA,
-    PRD, JCAP, Nature Astronomy): journal-accurate figure sizes, fonts and
-    colorblind-friendly palettes, plus a tool that generates LaTeX
+    publication-ready figures for astronomy, physics and chemistry journals
+    (MNRAS, A&A, ApJ, OJA, the Physical Review journals, JCAP, Nature
+    Astronomy, and the RSC and ACS journals): journal-accurate figure sizes,
+    fonts and colorblind-friendly palettes, plus a tool that generates LaTeX
     author/affiliation blocks from a CSV file.
   license: MIT
   license_file: LICENSE
